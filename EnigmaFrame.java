@@ -96,7 +96,7 @@ public class EnigmaFrame extends JFrame {
         inLabel = new JLabel("Inner");
         outLabel = new JLabel("Out");
         midLabel = new JLabel("Middle");
-        initialPosLabel = new JLabel("Initial Position");
+        initialPosLabel = new JLabel("Initial Positions");
 
         setting.add(inLabel);
         setting.add(rotorNum1);
@@ -110,6 +110,9 @@ public class EnigmaFrame extends JFrame {
         setting.add(initialPos);
         setting.add(initialPosLabel);
 
+        setting.add(encryptButton);
+        setting.add(decryptButton);
+
         // create input and output panel
         JPanel io = new JPanel();
         inputLabel = new JLabel("Input");
@@ -119,17 +122,12 @@ public class EnigmaFrame extends JFrame {
         input.setLineWrap(true);
         output.setLineWrap(true);
 
-        // create panel for buttons
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.add(encryptButton);
-        buttonPanel.add(decryptButton);
-
         // adds functions to panels
         io.add(inputLabel);
         io.add(input);
         io.add(outputLabel);
         io.add(output);
-        io.add(buttonPanel);
+       // io.add(buttonPanel);
 
         // adds functions to panels
         main.add(setting);
